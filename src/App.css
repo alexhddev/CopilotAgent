@@ -24,6 +24,7 @@ main[data-theme='dark'] {
 
 .topbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -31,6 +32,7 @@ main[data-theme='dark'] {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
