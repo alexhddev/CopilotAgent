@@ -5,7 +5,7 @@ function NotFound() {
     <section className="content">
       <h1>Page not found</h1>
       <p>
-        <Link to="/">Go back home</Link>
+        <Link to="/" style={{ color: 'var(--foreground)' }}>Go back home</Link>
       </p>
     </section>
   )
