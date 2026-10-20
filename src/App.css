@@ -22,8 +22,52 @@ main[data-theme='dark'] {
   --button-border: #555;
 }
 
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-link {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--foreground);
+  background: var(--button-background);
+}
+
+.navbar-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .theme-toggle {
-  align-self: flex-end;
   padding: 0.6rem 0.9rem;
   border: 1px solid var(--button-border);
   border-radius: 0.5rem;
