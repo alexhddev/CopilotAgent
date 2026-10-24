@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 
+
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
