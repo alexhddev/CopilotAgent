@@ -6,7 +6,7 @@ test('theme toggle switches between light and dark', async ({ page }) => {
 
   await expect(main).toHaveAttribute('data-theme', 'light')
 
-  await page.getByRole('button', { name: 'Switch to dark theme' }).click()
+  await page.getByRole('button', { name: 'Switch to dark theme' })
   await expect(main).toHaveAttribute('data-theme', 'dark')
   await expect(page.getByRole('button', { name: 'Switch to light theme' })).toHaveAttribute(
     'aria-pressed',
