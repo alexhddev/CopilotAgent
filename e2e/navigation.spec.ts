@@ -10,7 +10,7 @@ test('navbar navigates between pages', async ({ page }) => {
   await page.goto('/')
   const nav = page.getByRole('navigation', { name: 'Main navigation' })
 
-  await nav.getByRole('link', { name: 'About us' }).click()
+  await nav.getByRole('link', { name: 'About' }).click()
   await expect(page).toHaveURL('/about')
   await expect(page.getByRole('heading', { name: 'About us' })).toBeVisible()
 
